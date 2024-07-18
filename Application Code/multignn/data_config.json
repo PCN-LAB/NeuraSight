@@ -1,0 +1,10 @@
+{
+    "paths": {
+      "original_data": "Data/Small_HI/original_transactions.csv",
+      "formatted_data": "Data/Small_HI/formatted_transactions.csv",
+      "prediction_data": "Data/Small_HI/prediction_data.csv",
+      "aml_data": "Data", 
+      "model_to_load": "Model",
+      "model_to_save": "Model"
+    }
+}

@@ -1,0 +1,60 @@
+.eclipseBody {
+  width: auto;
+  height: auto;
+
+  /* px */
+  padding-left: 10px;
+  padding-right: 10px;
+  /* py */
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: red;
+  z-index: 100;
+  font-weight: 700;
+  cursor: move;
+}
+
+/* Div where dragging is enabled */
+.eclipseDragging:before {
+  content: '';
+  position: absolute;
+  /* top: -10px;
+  left: -10px; */
+  height: auto + 10px;
+  width: auto + 10px;
+  /* background: radial-gradient(black 1%, yellow 1%, green 1%); */
+  background: red;
+  opacity: 1;
+  z-index: -1;
+  line-height: 1;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 8px;
+  /* border: 1px solid #222138; */
+  cursor: move;
+}
+
+/* Div where connections can be made from */
+div.eclipseHandle {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  transform: none;
+  border: none;
+  z-index: 1;
+  opacity: 0;
+  cursor: move;
+}
